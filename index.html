@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Theory-Based Quantum Model Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Quantum Graph Theory</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Project Overview</a></li>
+                <li><a href="team.html">Team Members</a></li>
+                <li><a href="tech.html">Tech Stack</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Exploring Graph Theory-Based Quantum Models</h1>
+            <p class="hero-subtitle">QGNN·QAOA Experimental Research Project</p>
+            <p class="hero-info">Yonsei University Graph Theory Team Project</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-section">
+            <h2>Project Overview</h2>
+            <div class="intro-content">
+                <p>
+                    This research explores Quantum Graph Neural Networks (QGNN) to overcome the classical limitations of Graph Neural Networks (GNN).
+                    We construct richer representation spaces through quantum superposition and entanglement,
+                    and implement Variational Quantum Algorithms (VQA) applicable to NISQ devices.
+                </p>
+            </div>
+        </section>
+
+        <section class="experiments">
+            <h2>Key Experiments</h2>
+            <div class="experiment-grid">
+                <div class="experiment-card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Experiment 1: Isomorphism Verification</h3>
+                    <h4>1-WL vs EQGC Quantum Invariants</h4>
+                    <p>Testing EQGC-based quantum invariants' ability to distinguish SRG pairs that 1-WL test cannot differentiate</p>
+                    <ul class="result-list">
+                        <li>Toy Case: Successfully distinguished Cycle6 + chord</li>
+                        <li>SRG Case: Partial separation of Rook vs Shrikhande</li>
+                    </ul>
+                </div>
+
+                <div class="experiment-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Experiment 2: Laplacian λ₂ Approximation</h3>
+                    <h4>Classical vs VQE-style Surrogate</h4>
+                    <p>Comparing algebraic connectivity λ₂ using classical power method and quantum circuit-based surrogate</p>
+                    <ul class="result-list">
+                        <li>Classical λ₂: 3.6180 (stable convergence)</li>
+                        <li>VQE Surrogate: Loss → 0 convergence confirmed</li>
+                    </ul>
+                </div>
+
+                <div class="experiment-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Experiment 3: QAOA Optimization</h3>
+                    <h4>Max-Cut Problem & Noise Analysis</h4>
+                    <p>Max-Cut optimization using QAOA and impact analysis of depolarizing/amplitude damping noise</p>
+                    <ul class="result-list">
+                        <li>p=1 structure: ~57% stable performance</li>
+                        <li>Noisy environment: Significant performance degradation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="results">
+            <h2>Key Achievements</h2>
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-number">3</div>
+                    <div class="result-text">
+                        <h4>Core Experiments</h4>
+                        <p>Isomorphism, Laplacian, QAOA tests</p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">1-WL</div>
+                    <div class="result-text">
+                        <h4>Limitation Overcome</h4>
+                        <p>SRG distinction via EQGC confirmed</p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">NISQ</div>
+                    <div class="result-text">
+                        <h4>Practicality Verified</h4>
+                        <p>Performance analysis in noisy environments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h2>Conclusions & Significance</h2>
+            <div class="conclusion-content">
+                <div class="conclusion-item">
+                    <h3>🎯 Research Achievements</h3>
+                    <p>Empirically confirmed that quantum circuits can capture structural information different from classical message-passing approaches.</p>
+                </div>
+                <div class="conclusion-item">
+                    <h3>🔍 Technical Insights</h3>
+                    <p>QGNN shows potential to complement classical GNN expressiveness limitations, but technical challenges like noise, scale, and learning plateaus need resolution.</p>
+                </div>
+                <div class="conclusion-item">
+                    <h3>🚀 Future Directions</h3>
+                    <p>Verification of QGNN's practical applicability through real quantum hardware experiments and development of error mitigation techniques.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Yonsei University Graph Theory Team Project</p>
+            <p>RAISE LAB & Department of Software</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Stack - QGNN·QAOA Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Quantum Graph Theory</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Project Overview</a></li>
+                <li><a href="team.html">Team Members</a></li>
+                <li><a href="tech.html" class="active">Tech Stack</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Technology Stack</h1>
+        <p>Core Technologies Used in the Project</p>
+    </header>
+
+    <main class="container">
+        <section class="tech-overview">
+            <h2>Technical Overview</h2>
+            <p class="tech-intro">
+                This project explores cutting-edge research combining quantum computing and graph theory.
+                We implemented innovative approaches to overcome classical GNN limitations through quantum circuits.
+            </p>
+        </section>
+
+        <section class="tech-categories">
+            <div class="tech-category">
+                <h2>Quantum Computing Technologies</h2>
+                <div class="tech-grid">
+                    <div class="tech-card quantum">
+                        <div class="tech-header">
+                            <h3>QGNN</h3>
+                            <span class="tech-badge">Quantum Graph Neural Network</span>
+                        </div>
+                        <div class="tech-content">
+                            <p>Quantum graph neural network constructing rich representation spaces through superposition and entanglement</p>
+                            <h4>Key Architectures</h4>
+                            <ul>
+                                <li>QRecGNN: Recurrent quantum GNN</li>
+                                <li>QConvGNN: Convolutional quantum GNN</li>
+                                <li>EQGC: Equivariant Quantum Graph Circuit</li>
+                                <li>EDU-QGC: Diagonal unitary-based structure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card quantum">
+                        <div class="tech-header">
+                            <h3>QAOA</h3>
+                            <span class="tech-badge">Quantum Approximate Optimization Algorithm</span>
+                        </div>
+                        <div class="tech-content">
+                            <p>Variational quantum algorithm for solving combinatorial optimization problems</p>
+                            <h4>Implementation Details</h4>
+                            <ul>
+                                <li>Max-Cut problem optimization</li>
+                                <li>p=1, p=2 layer structure implementation</li>
+                                <li>Gradient-based parameter optimization</li>
+                                <li>Expected cut value measurement and analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card quantum">
+                        <div class="tech-header">
+                            <h3>VQE</h3>
+                            <span class="tech-badge">Variational Quantum Eigensolver</span>
+                        </div>
+                        <div class="tech-content">
+                            <p>Laplacian approximation using variational quantum eigensolver</p>
+                            <h4>Application Methods</h4>
+                            <ul>
+                                <li>Surrogate loss function design</li>
+                                <li>Rayleigh quotient structure utilization</li>
+                                <li>Z-expectation vector-based optimization</li>
+                                <li>Shallow-depth ansatz implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h2>Graph Theory Technologies</h2>
+                <div class="tech-grid">
+                    <div class="tech-card graph">
+                        <div class="tech-header">
+                            <h3>1-WL Test</h3>
+                            <span class="tech-badge">Weisfeiler-Lehman Test</span>
+                        </div>
+                        <div class="tech-content">
+                            <p>Classical algorithm for graph isomorphism testing</p>
+                            <h4>Characteristics</h4>
+                            <ul>
+                                <li>Node color multiset-based updates</li>
+                                <li>Message passing mechanism</li>
+                                <li>Expressiveness upper bound limitations</li>
+                                <li>Cannot distinguish SRGs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card graph">
+                        <div class="tech-header">
+                            <h3>Laplacian λ₂</h3>
+                            <span class="tech-badge">Algebraic Connectivity</span>
+                        </div>
+                        <div class="tech-content">
+                            <p>Indicator representing graph's algebraic connectivity</p>
+                            <h4>Implementation Methods</h4>
+                            <ul>
+                                <li>Classical: Power Method</li>
+                                <li>Quantum: VQE-style surrogate</li>
+                                <li>L = D - A matrix construction</li>
+                                <li>Second eigenvalue approximation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card graph">
+                        <div class="tech-header">
+                            <h3>SRG</h3>
+                            <span class="tech-badge">Strongly Regular Graph</span>
+                        </div>
+                        <div class="tech-content">
+                            <p>Special graph structures with uniform local patterns</p>
+                            <h4>Test Subjects</h4>
+                            <ul>
+                                <li>SRG(16,6,2,2) structure</li>
+                                <li>Rook Graph</li>
+                                <li>Shrikhande Graph</li>
+                                <li>For 1-WL limitation verification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h2>Implementation Technologies</h2>
+                <div class="tech-grid">
+                    <div class="tech-card impl">
+                        <div class="tech-header">
+                            <h3>Quantum Circuit Design</h3>
+                            <span class="tech-badge">Circuit Architecture</span>
+                        </div>
+                        <div class="tech-content">
+                            <h4>Encoding Methods</h4>
+                            <ul>
+                                <li>RY rotation gate encoding</li>
+                                <li>Amplitude encoding</li>
+                                <li>Angle encoding</li>
+                            </ul>
+                            <h4>Entanglement Structure</h4>
+                            <ul>
+                                <li>CNOT-RZ-RX-CNOT blocks</li>
+                                <li>Edge-based entanglement generation</li>
+                                <li>Permutation equivariance guarantee</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card impl">
+                        <div class="tech-header">
+                            <h3>Optimization Techniques</h3>
+                            <span class="tech-badge">Optimization Methods</span>
+                        </div>
+                        <div class="tech-content">
+                            <h4>Gradient Calculation</h4>
+                            <ul>
+                                <li>Parameter-shift rule</li>
+                                <li>Finite difference method</li>
+                                <li>Automatic differentiation</li>
+                            </ul>
+                            <h4>Optimizers</h4>
+                            <ul>
+                                <li>Gradient Descent</li>
+                                <li>Adam optimizer</li>
+                                <li>Learning rate scheduling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card impl">
+                        <div class="tech-header">
+                            <h3>Noise Modeling</h3>
+                            <span class="tech-badge">Noise Simulation</span>
+                        </div>
+                        <div class="tech-content">
+                            <h4>Noise Types</h4>
+                            <ul>
+                                <li>Depolarizing noise</li>
+                                <li>Amplitude damping</li>
+                                <li>Shot noise</li>
+                            </ul>
+                            <h4>Mitigation Techniques</h4>
+                            <ul>
+                                <li>Error mitigation</li>
+                                <li>Shallow-depth circuit design</li>
+                                <li>Hybrid-QGNN architecture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h2>Development Environment</h2>
+                <div class="tech-grid">
+                    <div class="tech-card tools">
+                        <div class="tech-header">
+                            <h3>Frameworks</h3>
+                        </div>
+                        <div class="tech-content">
+                            <ul>
+                                <li>Python 3.x</li>
+                                <li>Qiskit / PennyLane</li>
+                                <li>NetworkX (graph processing)</li>
+                                <li>NumPy / SciPy</li>
+                                <li>Matplotlib (visualization)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card tools">
+                        <div class="tech-header">
+                            <h3>Simulators</h3>
+                        </div>
+                        <div class="tech-content">
+                            <ul>
+                                <li>Statevector simulator</li>
+                                <li>Sampling simulator</li>
+                                <li>Noise simulator</li>
+                                <li>NISQ environment emulation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-card tools">
+                        <div class="tech-header">
+                            <h3>Analysis Tools</h3>
+                        </div>
+                        <div class="tech-content">
+                            <ul>
+                                <li>Jupyter Notebook</li>
+                                <li>TensorBoard (learning monitoring)</li>
+                                <li>Git (version control)</li>
+                                <li>LaTeX (report writing)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-challenges">
+            <h2>Technical Challenges & Solutions</h2>
+            <div class="challenge-grid">
+                <div class="challenge-item">
+                    <h3>🎯 Barren Plateau Problem</h3>
+                    <p>Gradient vanishing in deep circuits → Resolved with shallow-depth design</p>
+                </div>
+                <div class="challenge-item">
+                    <h3>📊 Noise Sensitivity</h3>
+                    <p>NISQ device noise impact → Applied error mitigation techniques</p>
+                </div>
+                <div class="challenge-item">
+                    <h3>⚡ Scale Limitations</h3>
+                    <p>Qubit number constraints → Hybrid classical-quantum approach</p>
+                </div>
+                <div class="challenge-item">
+                    <h3>🔄 Convergence Instability</h3>
+                    <p>Unstable optimization process → Multiple initial value sampling</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Yonsei University Graph Theory Team Project</p>
+            <p>RAISE LAB & Department of Software</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
